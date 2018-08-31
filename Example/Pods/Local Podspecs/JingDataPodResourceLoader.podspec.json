@@ -1,0 +1,26 @@
+{
+  "name": "JingDataPodResourceLoader",
+  "version": "0.1.0",
+  "summary": "读取pod库里的资源文件.",
+  "homepage": "https://github.com/tianziyao/JingDataPodResourceLoader",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tianziyao": "tianziyao@jingdata.com"
+  },
+  "source": {
+    "git": "https://github.com/tianziyao/JingDataPodResourceLoader.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JingDataPodResourceLoader/Classes/**/*",
+  "dependencies": {
+    "JingDataPhoneScreen": [
+
+    ]
+  }
+}

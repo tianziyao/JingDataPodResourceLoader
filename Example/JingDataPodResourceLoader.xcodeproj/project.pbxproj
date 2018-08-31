@@ -40,13 +40,13 @@
 		607FACE51AFB9204008FA782 /* JingDataPodResourceLoader_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JingDataPodResourceLoader_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		898AC7BC162BB22CB723C844 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		8A6664CE6DDEE33E0F1684DB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		898AC7BC162BB22CB723C844 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8A6664CE6DDEE33E0F1684DB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A5926C2E106F322A8EA9733F /* Pods_JingDataPodResourceLoader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JingDataPodResourceLoader_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2358F5E982D5756ACA0EE05 /* Pods-JingDataPodResourceLoader_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JingDataPodResourceLoader_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JingDataPodResourceLoader_Tests/Pods-JingDataPodResourceLoader_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CA66A92D2542CF2A4E65EABB /* Pods-JingDataPodResourceLoader_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JingDataPodResourceLoader_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JingDataPodResourceLoader_Tests/Pods-JingDataPodResourceLoader_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D45915330FDEE1A246B5BED8 /* Pods-JingDataPodResourceLoader_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JingDataPodResourceLoader_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JingDataPodResourceLoader_Example/Pods-JingDataPodResourceLoader_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E5E9D09EE1D348A627E26BAB /* JingDataPodResourceLoader.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JingDataPodResourceLoader.podspec; path = ../JingDataPodResourceLoader.podspec; sourceTree = "<group>"; };
+		E5E9D09EE1D348A627E26BAB /* JingDataPodResourceLoader.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JingDataPodResourceLoader.podspec; path = ../JingDataPodResourceLoader.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +207,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -304,10 +304,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JingDataPodResourceLoader_Example/Pods-JingDataPodResourceLoader_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JingDataPhoneScreen/JingDataPhoneScreen.framework",
 				"${BUILT_PRODUCTS_DIR}/JingDataPodResourceLoader/JingDataPodResourceLoader.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JingDataPhoneScreen.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JingDataPodResourceLoader.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,12 +379,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -430,12 +434,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

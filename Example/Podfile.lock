@@ -1,0 +1,23 @@
+PODS:
+  - JingDataPhoneScreen (0.2.0)
+  - JingDataPodResourceLoader (0.1.0):
+    - JingDataPhoneScreen
+
+DEPENDENCIES:
+  - JingDataPodResourceLoader (from `../`)
+
+SPEC REPOS:
+  "/Users/Tian/.cocoapods/repos/TZYSpecs":
+    - JingDataPhoneScreen
+
+EXTERNAL SOURCES:
+  JingDataPodResourceLoader:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JingDataPhoneScreen: fdc4c9548664da6e8d0205a3ac146a5e51fe1164
+  JingDataPodResourceLoader: 7a20dbd76b187224716e2178d205d14ea9ac1c9f
+
+PODFILE CHECKSUM: 17c35749c5b8eba568970e9eb68101e2d457b137
+
+COCOAPODS: 1.5.3
