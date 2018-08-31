@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JingDataPodResourceLoader_Example' do
+  pod 'JingDataPodResourceLoader', :path => '../'
+
+  target 'JingDataPodResourceLoader_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
