@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JingDataPodResourceLoader'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = '读取pod库里的资源文件.'
 
   s.homepage         = 'https://github.com/tianziyao/JingDataPodResourceLoader'
