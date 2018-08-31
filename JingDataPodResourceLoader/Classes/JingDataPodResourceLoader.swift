@@ -12,9 +12,9 @@ extension JingDataPhoneScreen {
     var icon: String {
         switch self {
         case .inch3_5, .inch4_0, .inch4_7:
-            return "2x@"
+            return "@2x"
         default:
-            return "3x@"
+            return "@3x"
         }
     }
 }
